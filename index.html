@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+            rel="stylesheet">
+        <title>Daniels</title>
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#navo">
+        <nav class="navbar navbar-expand-lg fixed-top change mynav"
+            id="navo">
+            <div class="container ">
+                <a class="navbar-brand fs-2 fw-bold text-white  white-link" href="#">Daniels</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active text-white white-link"
+                                aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white text-white  white-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item mx-2 ">
+                            <a class="nav-link text-white text-white white-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white text-white white-link" href="#work">Work</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white text-white white-link" href="#clients">Clients</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white text-white white-link" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white text-white white-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- ///////////////////////////////////////////////////////////////////// -->
+            <script>
+                const headerEl=document.querySelector('.mynav');
+                window.addEventListener('scroll',function(){
+                    if(window.scrollY > 170){
+                        headerEl.classList.add('white-nav');
+                    }
+                    else  if(window.scrollY < 170){
+                        headerEl.classList.remove('white-nav');
+                    }
+                })
+            </script>
+
+            <!-- ///////////////////////////////////////////////////////////////////// -->
+            <header id="home" class="d-flex justify-content-center
+                align-items-center">
+                <div class="container text-center text-white">
+                    <p>Hello</p>
+                    <h1 class="h1-anim">I'M A </h1>
+                    <div class="icons d-flex justify-content-center
+                        align-items-center mt-5">
+                        <ul class=" list-unstyled d-flex gap-2 ">
+                            <li><a href=""><i class="fa-brands fa-google"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href=""><i class="fa-brands
+                                        fa-square-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+
+            <!-- ///////////////////////////////////////////////////////////////////// -->
+            <div class="about " id="about">
+                <div class="container mt-5">
+                    <div class="row align-items-center ">
+                        <div class="col-lg-5 position-relative">
+                            <div class="left">
+                                <div class="div">
+                                    <img src="images/hero.jpg" class=" w-100
+                                        border
+                                        p-1" alt="man with red hat">
+                                </div>
+                                <div class="bk-img ">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="right ">
+                                <h2 class=" fw-bolder">About Me.</h2>
+                                <h6 class="text-muted mb-4">UI / UX DESIGNER &
+                                    WEB DEVELOPER</h6>
+                                <p class="text-muted mb-4">I am <span
+                                        class="fw-bold">Jerry Daniels</span>
+                                    Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy
+                                    text ever It has survived not only five
+                                    centuries, but also the leap into electronic
+                                    but also the leap into electronic
+                                    typesetting, remaining essentially
+                                    unchanged. It was popularised in the 1960s
+                                    with the release of Letraset sheets
+                                    containing</p>
+                                <div class="tube text-white">
+                                    <div class="tube1">
+                                        <div class="tube-inner1 tube-inner
+                                            d-flex justify-content-between ">
+                                            <p class="ps-3 py-1">Web Design</p>
+                                            <p class="pe-3 py-1">95%</p>
+                                        </div>
+                                    </div>
+                                    <div class="tube2">
+                                        <div class="tube-inner2 tube-inner
+                                            d-flex justify-content-between ">
+                                            <p class="ps-3 py-1">Branding</p>
+                                            <p class="pe-3 py-1">80%</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="tube3">
+                                        <div class="tube-inner3 tube-inner
+                                            d-flex justify-content-between ">
+                                            <p class="ps-3 py-1">Development</p>
+                                            <p class="pe-3 py-1">90%</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="about-btn mt-5">
+                                        <button class="btn at-btn1 text-white
+                                            px-4 py-2 rounded-3">Download C.v</button>
+                                        <button class="btn at-btn2 px-4 py-2
+                                            rounded-3">Contact Me</button>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- ///////////////////////////////////////////////////////////////////// -->
+            <div class="services my-5" id="services">
+                <div class="container my-5">
+                    <div class="mytitle text-center my-5">
+                        <h2 class="fw-bold fs-1">Services.</h2>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="crd">
+                                <div class="iconn">
+                                    <div class="card text-center shadow">
+                                        <div class="icoo">
+                                            <i class="fa-solid fa-laptop fs-1
+                                                my-3
+                                                mt-4"></i>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-3 fw-bold">Web
+                                                Design</h5>
+                                            <p class="card-text">Lorem Ipsum is
+                                                simply dummy text of the Lorem
+                                                Ipsum
+                                                has been the industry's standard
+                                                dummy text ever</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="crd">
+                                <div class="iconn">
+                                    <div class="card text-center shadow">
+                                        <i class="fa-solid fa-volume-high fs-1
+                                            my-3
+                                            mt-4"></i>
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-3 fw-bold">Branding</h5>
+                                            <p class="card-text">Lorem Ipsum is
+                                                simply dummy text of the Lorem
+                                                Ipsum
+                                                has been the industry's standard
+                                                dummy text ever</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="crd">
+                                <div class="iconn">
+                                    <div class="card text-center shadow">
+                                        <i class="fa-solid fa-umbrella fs-1 my-3
+                                            mt-4"></i>
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-3 fw-bold">Development</h5>
+                                            <p class="card-text">Lorem Ipsum is
+                                                simply dummy text of the Lorem
+                                                Ipsum
+                                                has been the industry's standard
+                                                dummy text ever</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="crd">
+                                <div class="iconn">
+                                    <div class="card text-center shadow">
+                                        <i class="fa-regular fa-gem fs-1 my-3
+                                            mt-4"></i>
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-3 fw-bold">Creative
+                                                Design</h5>
+                                            <p class="card-text">Lorem Ipsum is
+                                                simply dummy text of the Lorem
+                                                Ipsum
+                                                has been the industry's standard
+                                                dummy text ever</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="crd">
+                                <div class="iconn">
+                                    <div class="card text-center shadow">
+                                        <i class="fa-solid fa-display fs-1 my-3
+                                            mt-4"></i> <div class="card-body">
+                                            <h5 class="card-title mb-3 fw-bold">Fully
+                                                Responsive</h5>
+                                            <p class="card-text">Lorem Ipsum is
+                                                simply dummy text of the Lorem
+                                                Ipsum
+                                                has been the industry's standard
+                                                dummy text ever</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="crd">
+                                <div class="iconn">
+                                    <div class="card text-center shadow">
+                                        <i class="fa-solid fa-camera fs-1 my-3
+                                            mt-4
+                                            "></i> <div class="card-body">
+                                            <h5 class="card-title mb-3 fw-bold">Retina
+                                                Ready</h5>
+                                            <p class="card-text">Lorem Ipsum is
+                                                simply dummy text of the Lorem
+                                                Ipsum
+                                                has been the industry's standard
+                                                dummy text ever</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ///////////////////////////////////////////////////////////////////// -->
+            <div class="work my-5" id="work">
+                <div class="container">
+                    <div class="title text-center position-relative w-100">
+                        <h2 class="fw-bolder position-relative fs-1">Portfolio.</h2>
+                    </div>
+                    <ul class="nav nav-tabs mx-auto d-flex
+                        justify-content-center align-items-center" id="myTab"
+                        role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active text-black"
+                                id="all-tab" data-bs-toggle="tab"
+                                data-bs-target="#all-tab-pane" type="button"
+                                role="tab" aria-controls="all-tab-pane"
+                                aria-selected="true">All</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link mx-3 text-black"
+                                id="brand-tab" data-bs-toggle="tab"
+                                data-bs-target="#brand-tab-pane" type="button"
+                                role="tab" aria-controls="brand-tab-pane"
+                                aria-selected="false">brand</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-black" id="design-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#design-tab-pane" type="button"
+                                role="tab" aria-controls="design-tab-pane"
+                                aria-selected="false">design</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link mx-3 text-black"
+                                id="graphic-tab" data-bs-toggle="tab"
+                                data-bs-target="#graphic-tab-pane" type="button"
+                                role="tab" aria-controls="graphic-tab-pane"
+                                aria-selected="false">graphic</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="all-tab-pane"
+                            role="tabpanel" aria-labelledby="all-tab"
+                            tabindex="0">
+                            <div class="row mt-5 g-3">
+                                <div class="col-lg-4">
+                                    <div class="item position-relative">
+                                        <img src="images/portfolio/1.jpg"
+                                            class=" w-100" alt="">
+                                        <div class="overlay position-absolute
+                                            d-flex justify-content-center
+                                            align-items-center flex-column">
+                                            <h5>Web Design</h5>
+                                            <div>
+                                                <i class="fa-solid fa-phone
+                                                    fs-4"></i>
+                                                <i class="fa-solid fa-phone
+                                                    fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="item position-relative">
+                                        <img src="images/portfolio/2.jpg"
+                                            class=" w-100" alt="">
+                                        <div class="overlay position-absolute
+                                            d-flex justify-content-center
+                                            align-items-center flex-column">
+                                            <h5>Web Design</h5>
+                                            <div>
+                                                <i class="fa-solid fa-phone
+                                                    fs-4"></i>
+                                                <i class="fa-solid fa-phone
+                                                    fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="item position-relative">
+                                        <img src="images/portfolio/3.jpg"
+                                            class=" w-100" alt="">
+                                        <div class="overlay position-absolute
+                                            d-flex justify-content-center
+                                            align-items-center flex-column">
+                                            <h5>Web Design</h5>
+                                            <div>
+                                                <i class="fa-solid fa-phone
+                                                    fs-4"></i>
+                                                <i class="fa-solid fa-phone
+                                                    fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="item position-relative">
+                                        <img src="images/portfolio/4.jpg"
+                                            class=" w-100" alt="">
+                                        <div class="overlay position-absolute
+                                            d-flex justify-content-center
+                                            align-items-center flex-column">
+                                            <h5>Web Design</h5>
+                                            <div>
+                                                <i class="fa-solid fa-phone
+                                                    fs-4"></i>
+                                                <i class="fa-solid fa-phone
+                                                    fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="item position-relative">
+                                        <img src="images/portfolio/5.jpg"
+                                            class=" w-100" alt="">
+                                        <div class="overlay position-absolute
+                                            d-flex justify-content-center
+                                            align-items-center flex-column">
+                                            <h5>Web Design</h5>
+                                            <div>
+                                                <i class="fa-solid fa-phone
+                                                    fs-4"></i>
+                                                <i class="fa-solid fa-phone
+                                                    fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="item position-relative">
+                                        <img src="images/portfolio/6.jpg"
+                                            class=" w-100" alt="">
+                                        <div class="overlay position-absolute
+                                            d-flex justify-content-center
+                                            align-items-center flex-column">
+                                            <h5>Web Design</h5>
+                                            <div>
+                                                <i class="fa-solid fa-phone
+                                                    fs-4"></i>
+                                                <i class="fa-solid fa-phone
+                                                    fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="brand-tab-pane"
+                            role="tabpanel" aria-labelledby="brand-tab"
+                            tabindex="0"> <div class="row mt-5 g-3">
+                                <div class="col-lg-4">
+                                    <div class="item position-relative">
+                                        <img src="images/portfolio/6.jpg"
+                                            class=" w-100" alt="">
+                                        <div class="overlay position-absolute
+                                            d-flex justify-content-center
+                                            align-items-center flex-column">
+                                            <h5>Web Design</h5>
+                                            <div>
+                                                <i class="fa-solid fa-phone
+                                                    fs-4"></i>
+                                                <i class="fa-solid fa-phone
+                                                    fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="item position-relative">
+                                        <img src="images/portfolio/4.jpg"
+                                            class=" w-100" alt="">
+                                        <div class="overlay position-absolute
+                                            d-flex justify-content-center
+                                            align-items-center flex-column">
+                                            <h5>Web Design</h5>
+                                            <div>
+                                                <i class="fa-solid fa-phone
+                                                    fs-4"></i>
+                                                <i class="fa-solid fa-phone
+                                                    fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="design-tab-pane"
+                            role="tabpanel" aria-labelledby="design-tab"
+                            tabindex="0"><div class="row mt-5 g-3"></div>
+                           
+                                        <div class="col-lg-4">
+                                            <div class="item position-relative">
+                                                <img src="images/portfolio/6.jpg"
+                                                    class=" w-100" alt="">
+                                                <div class="overlay position-absolute
+                                                    d-flex justify-content-center
+                                                    align-items-center flex-column">
+                                                    <h5>Web Design</h5>
+                                                    <div>
+                                                        <i class="fa-solid fa-phone
+                                                            fs-4"></i>
+                                                        <i class="fa-solid fa-phone
+                                                            fs-4"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="graphic-tab-pane"
+                                        role="tabpanel" aria-labelledby="graphic-tab"
+                                        tabindex="0">
+                                        <div class="row mt-5 g-3">
+                                            <div class="col-lg-4">
+                                                <div class="item position-relative">
+                                                    <img src="images/portfolio/4.jpg"
+                                                        class=" w-100" alt="">
+                                                    <div class="overlay position-absolute
+                                                        d-flex justify-content-center
+                                                        align-items-center flex-column">
+                                                        <h5>Web Design</h5>
+                                                        <div>
+                                                            <i class="fa-solid fa-phone
+                                                                fs-4"></i>
+                                                            <i class="fa-solid fa-phone
+                                                                fs-4"></i>
+                                                        </div>
+                                                    </div>
+                                                </div></div>
+                                            <div class="col-lg-4">
+                                                <div class="item position-relative">
+                                                    <img src="images/portfolio/1.jpg"
+                                                        class=" w-100" alt="">
+                                                    <div class="overlay position-absolute
+                                                        d-flex justify-content-center
+                                                        align-items-center flex-column">
+                                                        <h5>Web Design</h5>
+                                                        <div>
+                                                            <i class="fa-solid fa-phone
+                                                                fs-4"></i>
+                                                            <i class="fa-solid fa-phone
+                                                                fs-4"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+
+
+
+            <!-- ///////////////////////////////////////////////////////////////////// -->
+            <section id="clients" class="clients my-5">
+                <div class="container py-5">
+                    <div class="title text-center position-relative w-100">
+                        <h2 class="fw-bolder position-relative fs-1">Testimonials.</h2>
+                    </div>
+
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+
+                                <div class="text-center ">
+                                    <img src="images/testi-1.jpg"
+                                        class="clients-img rounded-circle mt-5"
+                                        alt="clients1">
+                                    <p class="text-muted mt-4 clients-data
+                                        mx-auto">
+                                        Lorem Ipsum has been the industry's
+                                        standard dummy text ever
+                                        since the when an unknown printer took a
+                                        galley of type and
+                                        scrambled it to make a type specimen
+                                        book.
+                                    </p>
+                                    <h5 class="fw-bold fs-6 pt-3">Alex Smith</h5
+                                        class="fw-bold">
+                                    <p class="text-muted fs-6 px-2">Envato
+                                        Customer</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="text-center">
+                                    <img src="images/testi-3.jpg"
+                                        class="clients-img rounded-circle mt-5"
+                                        alt="clients2">
+                                    <p class="text-muted mt-4">
+                                        Lorem Ipsum has been the industry's
+                                        standard dummy text ever
+                                        since the when an unknown printer took a
+                                        galley of type and
+                                        scrambled it to make a type specimen
+                                        book.
+                                    </p>
+                                    <h5 class="fw-bold fs-6 pt-3">Alex Smith</h5
+                                        class="fw-bold">
+                                    <p class="text-muted fs-6 px-2 ">Envato
+                                        Customer</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="text-center">
+                                    <img src="images/testi-2.jpg"
+                                        class="clients-img rounded-circle mt-5"
+                                        alt="clients3">
+                                    <p class="text-muted mt-4">
+                                        Lorem Ipsum has been the industry's
+                                        standard dummy text ever
+                                        since the when an unknown printer took a
+                                        galley of type and
+                                        scrambled it to make a type specimen
+                                        book.
+                                    </p>
+                                    <h5 class="fw-bold fs-6 pt-3">Alex Smith</h5
+                                        class="fw-bold">
+                                    <p class="text-muted fs-6 px-2">Envato
+                                        Customer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ///////////////////////////////////////////////////////////////////// -->
+            <div class="info py-5 my-5 bggray">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="cor text-center">
+                                <i class="fa-solid fa-users fs-2 mb-3"></i>
+                                <h1 class=" fw-bold">850</h1>
+                                <h6 class=" text-muted"> Happy Customers</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="cor text-center">
+                                <i class="fa-solid fa-thumbs-up fs-2 mb-3"></i>
+                                <h1 class=" fw-bold">467</h1>
+                                <h6 class=" text-muted"> Happy Customers</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="cor text-center">
+                                <i class="fa-solid fa-volume-high fs-2
+                                    mb-3"></i>
+                                <h1 class=" fw-bold">9876</h1>
+                                <h6 class=" text-muted"> Happy Customers</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="cor text-center">
+                                <i class="fa-solid fa-cloud-arrow-down fs-2
+                                    mb-3"></i>
+                                <h1 class=" fw-bold">120</h1>
+                                <h6 class=" text-muted"> Happy Customers</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ///////////////////////////////////////////////////////////////////// -->
+            <section id="team" class="my-5">
+                <div class="container py-3">
+                    <div class="title text-center position-relative w-100 mb-5">
+                        <h2 class="fw-bolder position-relative fs-1">Our Team.</h2>
+                    </div>
+
+                    <div class="row pt-5">
+                        <div class="col-lg-4 col-md-6 ">
+                            <div class="team-card position-relative">
+                                <div class="teamImg-scale">
+                                    <div class="team-img overflow-hidden">
+                                        <img src="images/1.jpg" class="w-100"
+                                            alt="John Doe">
+                                    </div>
+                                    <div class="team-layer position-absolute
+                                        d-flex justify-content-center
+                                        align-items-center ">
+                                        <ul class="list-unstyled d-flex gap-3">
+                                            <li><a href=""><i class="fa-brands
+                                                        fa-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa-brands
+                                                        fa-twitter"></i></a></li>
+                                            <li><a href=""><i class="fa-brands
+                                                        fa-instagram"></i></a></li>
+                                            <li><a href=""><i class="fa-brands
+                                                        fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-name w-100 position-static
+                                    text-center text-white py-2 px-2">
+                                    <h2 class="fs-3 pt-2">Dave Wood</h2>
+                                    <p class="fs-4 fw-bold ">BACK-END DEVELOPER</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 ">
+                            <div class="team-card position-relative">
+                                <div class="teamImg-scale">
+                                    <div class="team-img overflow-hidden">
+                                        <img src="images/2.jpg" class="w-100"
+                                            alt="John Doe">
+                                    </div>
+                                    <div class="team-layer position-absolute
+                                        d-flex justify-content-center
+                                        align-items-center ">
+                                        <ul class="list-unstyled d-flex gap-3">
+                                            <li><a href=""><i class="fa-brands
+                                                        fa-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa-brands
+                                                        fa-twitter"></i></a></li>
+                                            <li><a href=""><i class="fa-brands
+                                                        fa-instagram"></i></a></li>
+                                            <li><a href=""><i class="fa-brands
+                                                        fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-name w-100 position-static
+                                    text-center text-white py-2 px-2">
+                                    <h2 class="fs-3 pt-2">Dave Wood</h2>
+                                    <p class="fs-4 fw-bold ">BACK-END DEVELOPER</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 ">
+                            <div class="team-card position-relative">
+                                <div class="teamImg-scale">
+                                    <div class="team-img overflow-hidden">
+                                        <img src="images/1.jpg" class="w-100"
+                                            alt="John Doe">
+                                    </div>
+                                    <div class="team-layer position-absolute
+                                        d-flex justify-content-center
+                                        align-items-center ">
+                                        <ul class="list-unstyled d-flex gap-3">
+                                            <li><a href=""><i class="fa-brands
+                                                        fa-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa-brands
+                                                        fa-twitter"></i></a></li>
+                                            <li><a href=""><i class="fa-brands
+                                                        fa-instagram"></i></a></li>
+                                            <li><a href=""><i class="fa-brands
+                                                        fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-name w-100 position-static
+                                    text-center text-white py-2 px-2">
+                                    <h2 class="fs-3 pt-2">Claire Chedd</h2>
+                                    <p class="fs-4 fw-bold ">BACK-END DEVELOPER</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ///////////////////////////////////////////////////////////////////// -->
+            <div class="contact my-5" id="contact">
+                <div class="container">
+                    <div class="mytitle text-center my-5">
+                        <h2 class="fw-bold fs-1">Contact us </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="cont text-center">
+                                <p><i class="fa-solid fa-location-arrow
+                                        fs-4"></i></p>
+                                <h5 class="fw-bold">Address</h5>
+                                <p class=" text-muted">6834 Hollywood Blvd -
+                                    Los Angeles CA</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="cont text-center">
+                                <p><i class="fa-solid fa-envelope fs-4"></i></p>
+                                <h5 class="fw-bold">Email</h5>
+                                <p class=" text-muted">Support@website.com</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="cont text-center">
+                                <p><i class="fa-solid fa-phone fs-4"></i></p>
+                                <h5 class="fw-bold">Phone</h5>
+                                <p class=" text-muted"> +20 010 2517 8918</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class=" mb-5 mt-4 ">
+                        <div class="firsttwo d-flex
+                            justify-content-between">
+                            <input class=" p-2 my-2 border-0 bggray
+                                rounded-2" type="text"
+                                placeholder="Name">
+                            <input class=" p-2 my-2 border-0 bggray
+                                rounded-2" type="email"
+                                placeholder="Email">
+                        </div>
+                        <textarea class=" pb-5 my-2 w-100 border-0 bggray
+                            rounded-2"
+                            placeholder="message"></textarea>
+                        <div class="ff">
+                            <div class="btn btn5 px-3 py-2 mt-2">
+                                Submit</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+            <!-- ///////////////////////////////////////////////////////////////////// -->
+            <footer>
+                <div class="container-fluid bg-black">
+                    <div class=" p-4 text-white">
+                        <p class=" text-white-50 text-center">Copy Right
+                            2018 © By Daniels All Rights Reserved</p>
+                    </div>
+                </div>
+            </footer>
+            <!-- ///////////////////////////////////////////////////////////////////// -->
+   
+            <script src="css/bootstrap.bundle.min.js"></script>
+            <script src="index.js"></script>
+        </body>
+    </html>

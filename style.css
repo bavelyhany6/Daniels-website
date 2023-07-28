@@ -1,0 +1,439 @@
+html{
+scroll-behavior: smooth;
+  scroll-padding-top: 74px;
+}
+:root {
+  --main-color: #1c1c1c;
+  --backgroundColor: #f7f7f7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+/* ---------------------------------------navbar----------------------------------------------------------- */
+nav ul li a{
+  position: relative;
+  padding: 0;
+  transition: .5s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active{
+  width: fit-content;
+}
+.navbar-expand-lg .navbar-nav .nav-link.active::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  background-color: black;
+  top: 100%;
+  animation-name:link-animation ;
+  animation-duration: .3s;
+}
+.white-nav .navbar-expand-lg .navbar-nav .nav-link.active::before {
+
+  background-color: white !important;
+}
+@keyframes link-animation{
+  0%{
+    width: 0%;
+  }
+  10%{
+    width: calc(8%*1);
+  }
+  20%{
+    width: calc(8%*2);
+  }
+  30%{
+    width: calc(8%*3);
+  }
+  40%{
+    width: calc(8%*4);
+  }
+  50%{
+    width: calc(8%*5);
+  }
+  60%{
+    width: calc(8%*6);
+  }
+  70%{
+    width: calc(8%*7);
+  }
+  80%{
+    width: calc(8%*8);
+  }
+  90%{
+    width: calc(8%*9);
+  }
+  100%{
+    width: calc(8%*10);
+  }
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0;
+}
+.white-nav{
+  background-color: white !important;
+}
+.white-link{
+  color: #f7f7f7 !important;
+}
+.white-nav .white-link{
+color: black !important;
+}
+/* ----------------------------------------Head----------------------------------------------------------- */
+header {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(images/bg.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+header p {
+  font-size: 55px;
+  font-weight: bolder;
+}
+
+.h1-anim{
+  position: relative;
+}
+.h1-anim::after{
+  content: "";
+  animation-name: typing;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+}
+
+
+
+@keyframes typing {
+  0%{content: "Larry Daniels|";}
+  2%{content: "Larry Daniels|";}
+  4%{content: "Larry Daniels|";}
+  6%{content: "Larry Daniel|";}
+  8%{content: "Larry Danie|";}
+  10%{content: "Larry Dani|";}
+  12%{content: "Larry Dan|";}
+  14%{content: "Larry Da|";}
+  16%{content: "Larry D|";}
+  18%{content: "Larry |";}
+  20%{content: "Larry|";}
+  22%{content: "Larr|";}
+  24%{content: "Lar|";}
+  26%{content: "La|";}
+  28%{content: "L|";}
+  30%{content: "|";}
+  32%{content: "|";}
+  34%{content: "|";}
+  36%{content: "|";}
+  38% {content: "D|";}
+  40% {content: "De|";}
+  42% {content: "Dev|";}
+  44% {content: "Deve|";}
+  46% {content: "Devel|";}
+  48% {content: "Develo|";}
+  50% {content: "Develop|";}
+  52% {content: "Develope|";}
+  54% {content: "Developer|";}
+  56% {content: "Developer|";}
+  58% {content: "Developer|";}
+  60% {content: "Develope|";}
+  62% {content: "Develop|";}
+  64% {content: "Develo|";}
+  65% {content: "Devel|";}
+  68% {content: "Deve|";}
+  70% {content: "Dev|";}
+  73% {content: "De|";}
+  76% {content: "Des|";}
+  79% {content: "Desi|";}
+  82% {content: "Desig|";}
+  85% {content: "Design|";}
+  89% {content: "Designe|";}
+  92% {content: "Designer|";}
+  95% {content: "Designer|";}
+  98% {content: "Designer|";}
+  100% {content: "Designer|";}
+}
+
+header .icons ul li i {
+  border-radius: 50%;
+  padding: 8px;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.459);
+  color: white;
+}
+
+/* ---------------------------------------About-me----------------------------------------------------------- */
+.tube1,
+.tube2,
+.tube3 {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 28px;
+  margin-top: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+.tube-inner {
+  background-color: var(--main-color);
+  height: 100%;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.tube-inner1 {
+  width: 95%;
+}
+.tube-inner2 {
+  width: 80%;
+}
+.tube-inner3 {
+  width: 90%;
+}
+.at-btn1 {
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+.at-btn2 {
+  border: 1px solid var(--main-color);
+  transition: 0.5s;
+}
+
+.at-btn1:hover {
+  background-color: #fff;
+  border: 1px solid var(--main-color);
+  color: var(--main-color) !important;
+}
+
+.at-btn2:hover {
+  background-color: var(--main-color);
+  border: 1px solid #fff;
+  color: #fff;
+}
+.div .left img{
+  position: relative;
+}
+.bk-img{
+  background-image: url(images/dots.png);
+  background-repeat: repeat;
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  z-index: -1;
+}
+
+/* ---------------------------------------Services----------------------------------------------------------- */
+
+.services .crd .iconn i, .item i {
+  border: 5px solid #f4f4f4;
+  border-radius: 50%;
+  width: fit-content;
+  padding: 10px;
+  background-color: #f4f4f4;
+  margin: auto;
+  transition: 0.5s;
+}
+.services .crd:hover  .iconn i,.item i:hover {
+  border: 5px solid black;
+  background-color: black;
+  margin: auto;
+  color: white;
+  transition: 0.5s;
+}
+/* ---------------------------------------portofolio----------------------------------------------------------- */
+.works .title h2::before{
+  content: "";
+  position: absolute;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat-x;
+  top: 100%;
+  width: 14%;
+  height: 100%;
+}
+.nav-tabs{
+  border: none;
+  color: #1c1c1c;
+  font-weight: bold;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link,
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  border: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  border-bottom: 2px solid black;
+
+}
+/* ---------------------------------------Contact----------------------------------------------------------- */
+
+.contact {
+  width: 75%;
+  margin: auto;
+}
+.contact .firsttwo input {
+  width: 49%;
+}
+.contact .ff .btn5 {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+.contact .btn5:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+.bggray {
+  background-color: #f4f4f4;
+}
+.contact p i {
+  border: 5px solid #f4f4f4;
+  border-radius: 50%;
+  width: fit-content;
+  padding: 10px;
+  background-color: #f4f4f4;
+  margin: auto;
+  transition: 0.5s;
+}
+.contact .cont:hover p i {
+  border: 5px solid black;
+  background-color: black;
+  margin: auto;
+  color: white;
+  transition: 0.5s;
+}
+ .clients-img{
+  width: 100px;
+  height: 100px;
+}
+
+#clients{
+  background-color: #F7F7F7;
+}
+
+.carousel-indicators .active{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #869791;
+}
+.carousel-indicators{
+  bottom: -60px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #869791;
+}
+.clients-data {
+  max-width: 975px;
+}
+
+
+.work .item .overlay {
+  background-color: white;
+  width: 96%;
+  height: 96%;
+  top: 3%;
+  right: 2%;
+  /* bottom: 2%;
+  left: 2%; */
+  opacity: 0;
+  transition: 0.4s;
+}
+.work .item:hover .overlay {
+  opacity: 1;
+  top: 2%;
+}
+.work .item .overlay h5 {
+  color: black;
+  font-size: 20px;
+  height: 20%;
+  transition: 0.5s;
+}
+.work .item:hover .overlay h5 {
+  height: 10%;
+  transition: 0.5s;
+}
+/* ---------------------------------------team----------------------------------------------------------- */
+#team{
+  background-color:var(--backgroundColor) ;
+}
+
+.team-layer{
+  top: 5px;
+  bottom: 122px;
+  left: 5px;
+  right: 5px;
+  background-color: #fffffff1;
+  transform: rotateY(180deg) scale(0.5);
+  opacity: 0;
+  transition: 0.5s;
+}
+.team-card:hover .team-layer{
+  opacity: 1;
+  transform: rotateY(360deg) scale(1);
+}
+
+.team-layer ul li{
+  width: 40px;
+  height: 40px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.team-layer ul li:hover{
+  background-color: #fff;
+  border: 1px solid var(--main-color);
+}
+.team-layer ul li a{
+  color: #fff;
+  transition: 0.3s;
+}
+.team-layer ul li:hover a{
+  color: var(--main-color);
+}
+
+.team-name{
+  background-color: #5B5B5B;
+}
+
+.teamImg-scale img {
+  transition: 0.5s;
+}
+.teamImg-scale:hover img{
+  transform: scale(1.1);
+}
+
+
+/* work */
+.works .title h2::before{
+  content: "";
+  position: absolute;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat-x;
+  top: 100%;
+  width: 14%;
+  height: 100%;
+}
